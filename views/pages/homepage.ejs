@@ -1,0 +1,50 @@
+<header>
+  <div class="navbar navbar-dark bg-dark box-shadow">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>Station F > Meeting rooms</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center" style="margin-bottom:0;">
+    <div class="container">
+      <h1 class="jumbotron-heading">Search for a meeting room</h1><br>
+      <form class="form-inline justify-content-center">
+        <div class="form-group mb-2">
+          <label for="fromDate" class="mx-sm-3">From</label>
+          <input type="datetime-local" class="form-control" id="fromDate">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="toDate" class="mx-sm-3">To</label>
+          <input type="datetime-local" class="form-control" id="toDate">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row" id="rooms">        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookingFeedback" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Your booking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
