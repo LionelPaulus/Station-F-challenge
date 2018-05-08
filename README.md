@@ -19,16 +19,12 @@ Route | Method | Description
 /api/bookings/:bookingId | GET | Get details about a specific booking
 
 ## Security
-[x] The API for adding reservations checks if the desired slot is effectively free or not.
-[x] You can't add or edit a meeting room.
-[x] You can't edit a booking.
-[x] API input paramaters are checked to avoid breaking the server.
+- [x] The API for adding reservations checks if the desired slot is effectively free or not.
+- [x] You can't add or edit a meeting room.
+- [x] You can't edit a booking.
+- [x] API input paramaters are checked to avoid breaking the server.
 
 ## Suggestions for improvement
-[ ] Simplify the 
-
-To do:
-x Secure booking with check of availibility
-- Simplify the search
-- Error message when booking doesn't work ?
-- Secure API (no delete, update, add when necessary)
+- [ ] Simplify the data range inputs: maybe 1 date input and 2 time inputs. But Station F is open all night long so maybe we should be able to book a room over two days...
+- [ ] Cache requests to the API.
+- [ ] Use history.pushState to update URL with the selected data range (can be useful for sharing the page).
