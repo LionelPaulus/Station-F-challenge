@@ -13,6 +13,8 @@
  * https://sailsjs.com/config/datastores
  */
 
+const dotenv = require('dotenv');
+dotenv.load();
 module.exports.datastores = {
 
 
@@ -49,7 +51,7 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: 'sails-mongo',
-    url: 'mongodb://api:pI3vjoYJLToi@ds115420.mlab.com:15420/station-f-challenge',
+    url: process.env.DATABASE_URL,
 
   },
 
